@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <! v3.0 0211w 1109am -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"   rel="stylesheet"   integrity= "sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"     crossorigin="anonymous"> 
+
+    <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
+
+    <script src="locationImages.txt"> /* Use in different GitHub accounts */ </script>
+
+    <script src="listImagesJSON.txt"> /* List images on C drive */ </script>
+
+    <script src="trans.txt"> </script>
+
+
+<body style="background-color:#a56ca7; overscroll-behavior-y:none; " onload = "windowLoaded();" >
+
+<h3 class="text-center">Johnny's Music Picks - <label id="curTag" >All</label></h3>
+
+<!-- MAIN CONTAINER TOP -->
+<div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+<div class="cc" >
+
+  <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog modal-lg">
+  <div class="modal-content">
+  <div class="modal-header">      
+     <button type="button" class="close" data-dismiss="modal">&times;</button>     
+  </div>
+  <div class="modal-body">      
+
+           <!-- MORE UI - POP UP BUTTONS  -----------------------------------------------------------------------------------------------------  -->
+
+           <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+              <div class="card card-body" style="background-color:#fadadd">   
+              <div class="row mr-auto                 container-fluid">
+                  <div class="col-xs-5 col-sm-3 col-lg-2 col-xl-2  container-fluid text-nowrap bd-highlight font-weight-bolder">
+                  Webs:
+
+                  </div>
+                  <div class="col-xs-7 col-sm-9 col-lg-10 col-xl-10 container-fluid">
+                    <table>
+
+                     <tr>
+                         <th style="border: 1px solid black; padding:3px;">      
+                                       <a target="_blank" href="https://www.chordie.com/"                              >Lyrics wChords</a></th>
+                         <th style="border: 1px solid black; padding:3px;"  >
+                                       <a target="_blank" href="https://www.pianochord.org/two-hands.html"             >Chords Piano</a> - 
+                                       <a target="_blank" href="https://www.youtube.com/watch?v=3Ab0b_YoOK0&list=RDMM" >MyMix</a></th>
+                         <th style="border: 1px solid black; padding:3px;" >
+                                       <a target="_blank" href="https://www.hanon-online.com/"                    >Hannon        </a></th>
+                      </tr>
+                      <tr>
+                         <th style="border: 1px solid black; padding:3px;"> 
+                                       <a target="_blank" href="https://johnmeistrell.github.io/GuessPianoNotes/" >Guess Notes       </a></th>
+                         <th style="border: 1px solid black; padding:3px;" >
+                                       <a target="_blank" href="https://mybeachradio.com/playlist//"              >Beach Radio       </a> - 
+                                       <a target="_blank" href="https://barnegatschools-nj.safeschools.com/login/">School            </a>
+                         </th>
+                         <th style="border: 1px solid black; padding:3px;" >
+                                       <a target="_blank" href="https://virtualpiano.net/?instr=classical-piano"    >Pianno</a> -
+                                       <a target="_blank" href="https://www.onlinepianist.com/virtual-piano"              >P</a></th>
+                      </tr>
+
+                      <tr>
+                         <th style="border: 1px solid black; padding:3px;">      
+                                       <a target="_blank" href="https://portal.barnegatschools.com/schoolfi/portal?tab1=payroll&tab2=timesheets&tab3=list&action=form">BusESY</a></th>
+                         <th style="border: 1px solid black; padding:3px;"  >
+                                       <a target="_blank" href="https://barnegatschools-nj.safeschools.com/login/">Train</a> -
+                                       <a target="_blank" href="https://www.barnegatschools.com/page/agendas-minutes">Mins</a>
+                        </th>
+                         <th style="border: 1px solid black; padding:3px;" >
+                                       <a target="_blank" href="https://www.airnow.gov/state/?name=new-jersey"            >AirQ</a> - 
+                                       <a target="_blank" href="https://www.accuweather.com/en/us/national/satellite"     >USA</a>
+                         </th>
+
+                      </tr>
+
+                      <tr>
+                         <th style="border: 1px solid black; padding:3px;">      
+                                       <a target="_blank" href="https://www.text2speech.org/"            >T2Speech</a></th>
+                         <th style="border: 1px solid black; padding:3px;"  >
+                                       <a target="_blank" href="https://convertcase.net/"                >Case</a> - 
+                                       <a target="_blank" href="https://www.textfixer.com/tools/replace-text-online.php" >Replace</a>
+                                       <a target="_blank" href="https://www.xfinity.com/stream/" >TV</a></th>
+                         <th style="border: 1px solid black; padding:3px;" >
+                                       <a target="_blank" href="https://text-compare.com/"                    >Compare </a></th>
+                      </tr>
+
+
+
+
+                    </table>
+                 </div>
+              </div></div>
+           </div>
+
+           <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+              <div class="card card-body" style="background-color:#fadadd">   
+              <div class="row mr-auto                 container-fluid">
+                  <div class="col-xs-5 col-sm-3 col-lg-2 col-xl-2  container-fluid text-nowrap bd-highlight font-weight-bolder">
+                  Stocks:
+                  </div>
+                  <div class="col-xs-7 col-sm-9 col-lg-10 col-xl-10 container-fluid">
+                    <a target="_blank" href="https://www.google.com/search?q=stock+chart+khc" >KHC</a> <small> x0306 22 23 24</small>
+                    <a target="_blank" href="https://www.google.com/search?q=stock+chart+CBRL">CBRL</a><small> x0116 25 27</small>
+                    <a target="_blank" href="https://www.google.com/search?q=stock+chart+EXC">EXC</a>  <small> x0302 35 43</small>
+                    <a target="_blank" href="https://www.google.com/search?q=stock+chart+PEG">PEG</a>  <small> x0310 55 65</small>
+                    <a target="_blank" href=" https://www.google.com/search?q=stock+chart+WEN">WEN</a>  <small> x0302 7</small>
+                    <a target="_blank" href=" https://www.google.com/search?q=stock+chart+SMG">SMG Scott</a>
+                    <br>
+                    <a target="_blank" href=" https://www.google.com/search?q=stock+chart+STM">STM</a>  <small> x0324 22 27 31</small>
+                    <a target="_blank" href=" https://www.google.com/search?q=stock+chart+SPCX">SPCX</a>
+                    <a target="_blank" href=" https://www.google.com/search?q=stock+chart+NBIS">NBIS</a>
+                    <a target="_blank" href=" https://www.google.com/search?q=stock+chart+INTC">INTC</a>
+
+                    <a target="_blank" href=" https://www.google.com/search?q=stock+chart+IRDM">IRDM Satellite (McLean)</a>
+                    <a target="_blank" href=" https://www.google.com/search?q=stock+chart+ASTS">ASTS Satellite</a>
+
+                    <a target="_blank" href="https://www.brownstoneresearch.com/">BrownStone</a>
+                    <a target="_blank" href="https://www.brownstoneresearch.com/authors/jeff-brown/">JeffBrown</a>
+
+                    <br> <small>0311w KHC  50 $23.16  $1157</small>
+                    <br> <small>0312r KHC  25 $22.51   $562  SOLD 25 0507r 23.34 $583          3% $21 2mths</small> 
+                    <br> <small>0327f CBRL 50 $26.74  $1337  SOLD 25 0406  29.33 $733 of $668  7% $46 5days</small>
+                    <br> <small>0327f WEN  75 $6.74    $505  SOLD 25 0513  $8.09 $202 of $168 20% $30 1mth</small>
+                    <br> <small>0327f SMG  25 $62.57  $1564  div 4.23% x0522</small>
+
+                  </div>
+              </div></div>
+           </div>
+
+           <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+              <div class="card card-body" style="background-color:#fadadd">   
+              <div class="row mr-auto                 container-fluid">
+                  <div class="col-xs-5 col-sm-3 col-lg-2 col-xl-2  container-fluid text-nowrap bd-highlight font-weight-bolder">
+                  Random:
+                  </div>
+                  <div class="col-xs-7 col-sm-9 col-lg-10 col-xl-10 container-fluid">
+                    <button class="btn border border-light btn-primary btn-Random1"               type= "button" onclick="playRandom('1')"  > 1-Favorite  </button>
+                    <button class="btn border border-light btn-primary btn-Random2"               type= "button" onclick="playRandom('2')"  > 2-Pianno </button>
+                    <button class="btn border border-light btn-primary btn-Random3"               type= "button" onclick="playRandom('3')"  > 3-Theory </button>
+                    <button class="btn border border-light btn-primary btn-Random4"               type= "button" onclick="playRandom('4')"  > 4-Beat   </button>
+                    <button class="btn border border-light btn-primary btn-Random5"               type= "button" onclick="playRandom('5')"  > 5-Kayla  </button>
+                    <button class="btn border border-light btn-primary btn-Random6"               type= "button" onclick="playRandom('6')"  > 6-Bands (Stones...)</button>  
+                    <button class="btn border border-light btn-primary btn-Random7"               type= "button" onclick="playRandom('7')"  > 7-Nature </button>
+                    <button class="btn border border-light btn-primary btn-Random8"               type= "button" onclick="playRandom('8')"  > 8-Surf   </button>
+                    <button class="btn border border-light btn-primary btn-Random9"               type= "button" onclick="playRandom('9')"  > 9-Dennis </button>
+                    <button class="btn border border-light btn-primary btn-Hide"                  type= "button" onclick="playRandom('Hide')"  >Hide</button>
+                    <div    class="container-fluid "               style="background-color:#fadadd;        padding:0px; margin:0px; border:5px solid #000000;" id="idSelBigBox" >
+                       <h2  class="container-fluid text-center"    style="background-color:#fadadd;        padding:0px; margin:0px;" id="idSelTitle"    >Needs a title</h2>
+                       <div class="container-fluid " style="min-height: 40px;                padding:0px; margin:0px">
+                       <a id="idSelURL" target="_blank" href="https://www.youtube.com/watch?v=587oWTI9twM">
+                       <img id="idSelImage"
+                            class="container-fluid"               style="min-height: 100px; height: 100%; width: 100%; object-fit: contain; padding:0px; margin:0px"
+                                       src="https://i.ytimg.com/vi/t4OGSyCADNg/hqdefault.jpg" alt="Photo1">
+                       </a>
+                       </div>
+                   </div>
+                 </div>
+              </div></div>
+           </div>
+
+
+           <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+              <div class="card card-body" style="background-color:#fadadd">   
+              <div class="row mr-auto                 container-fluid">
+                 <div class="col-xs-5 col-sm-3 col-lg-2 col-xl-2  container-fluid text-nowrap bd-highlight font-weight-bolder">
+                 Common:
+                 </div>
+                 <div class="col-xs-7 col-sm-9 col-lg-10 col-xl-10 container-fluid">
+                   <button class="btn border border-light btn-primary btn-GOOD"       type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-GOOD"     aria-controls = "multi-collapse-GOOD"    data-dismiss="modal"  >Good</button>
+                   <button class="btn border border-light btn-primary btn-MUST"       type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-MUST"     aria-controls = "multi-collapse-MUST"    data-dismiss="modal"  >Must</button>
+                   <button class="btn border border-light btn-primary btn-FINGERS"    type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-FINGERS"  aria-controls = "multi-collapse-FINGERS" data-dismiss="modal"  >Fingers</button>
+                   <button class="btn border border-light btn-primary btn-BLUES"      type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-BLUES"    aria-controls = "multi-collapse-BLUES"   data-dismiss="modal"  >Blues</button>
+                   <button class="btn border border-light btn-primary btn-DRUM"       type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-DRUM"     aria-controls = "multi-collapse-DRUM"    data-dismiss="modal"  >Drum</button>
+                   <button class="btn border border-light btn-primary btn-GUTAR"      type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-GUTAR"    aria-controls = "multi-collapse-GUTAR"   data-dismiss="modal"  >Gutar</button>
+                   <button class="btn border border-light btn-primary btn-PIANO"      type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-PIANO"    aria-controls = "multi-collapse-PIANO"   data-dismiss="modal"  >Piano</button>
+                   <button class="btn border border-light btn-primary btn-LYRICS"     type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-LYRICS"   aria-controls = "multi-collapse-LYRICS"  data-dismiss="modal"  >Lyrics</button>
+                   <button class="btn border border-light btn-primary btn-CIRCLE"     type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-CIRCLE"   aria-controls = "multi-collapse-CIRCLE"  data-dismiss="modal"  >Circle</button>
+                   <button class="btn border border-light btn-primary btn-LOTS"       type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-LOTS"     aria-controls = "multi-collapse-LOTS"    data-dismiss="modal"  >LOTS</button>
+                   <button class="btn border border-light btn-primary btn-NAMES"      type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-NAMES"    aria-controls = "multi-collapse-NAMES"   data-dismiss="modal"  >Names</button>
+                   <button class="btn border border-light btn-primary btn-SCALE"      type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-SCALE"    aria-controls = "multi-collapse-SCALE"   data-dismiss="modal"  >Scale</button>
+                   <button class="btn border border-light btn-primary btn-SURF"       type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-SURF"     aria-controls = "multi-collapse-SURF"    data-dismiss="modal"  >Surf</button>
+                   <button class="btn border border-light btn-primary btn-RIFFS"      type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-RIFFS"    aria-controls = "multi-collapse-RIFFS"   data-dismiss="modal"  >Riffs</button>
+                   <button class="btn border border-light btn-primary btn-NEW"        type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-NEW"      aria-controls = "multi-collapse-NEW"     data-dismiss="modal"  >NEW</button>
+                   <button class="btn border border-light btn-primary btn-BGRASS"     type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-BGRASS"   aria-controls = "multi-collapse-BGRASS"  data-dismiss="modal"  >bGrass</button>
+
+                   <button class="btn border border-light btn-primary btn-Energy"     type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Energy"   aria-controls = "multi-collapse-Energy"  data-dismiss="modal"  >Energy</button>
+                   <button class="btn border border-light btn-primary btn-Sprit"      type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Sprit"    aria-controls = "multi-collapse-Sprit"   data-dismiss="modal"  >Sprit</button>
+                   <button class="btn border border-light btn-primary btn-Top10"      type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Top10"    aria-controls = "multi-collapse-Top10"   data-dismiss="modal"  >Top10</button>
+                   <button class="btn border border-light btn-primary btn-Love"       type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Love"     aria-controls = "multi-collapse-Love"    data-dismiss="modal"  >Love</button>
+
+                   <br>
+                   <button class="btn border border-light btn-primary btn-Mon"        type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Mon"      aria-controls = "multi-collapse-Mon"     data-dismiss="modal"  >Mon</button>
+                   <button class="btn border border-light btn-primary btn-Tue"        type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Tue"      aria-controls = "multi-collapse-Tue"     data-dismiss="modal"  >Tue</button>
+                   <button class="btn border border-light btn-primary btn-Wed"        type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Wed"      aria-controls = "multi-collapse-Wed"     data-dismiss="modal"  >Wed</button>
+                   <button class="btn border border-light btn-primary btn-Thr"        type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Thr"      aria-controls = "multi-collapse-Thr"     data-dismiss="modal"  >Thr</button>
+                   <button class="btn border border-light btn-primary btn-Fri"        type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Fri"      aria-controls = "multi-collapse-Fri"     data-dismiss="modal"  >Fri</button>
+                   <button class="btn border border-light btn-primary btn-Sat"        type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Sat"      aria-controls = "multi-collapse-Sat"     data-dismiss="modal"  >Sat</button>
+                   <button class="btn border border-light btn-primary btn-Sun"        type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Sun"      aria-controls = "multi-collapse-Sun"     data-dismiss="modal"  >Sun</button>
+
+
+
+                 </div>
+              </div></div>
+           </div>
+
+           <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+              <div class="card card-body" style="background-color:#fadadd">   
+              <div class="row mr-auto                 container-fluid">
+                 <div class="col-xs-5 col-sm-3 col-lg-2 col-xl-2  container-fluid text-nowrap bd-highlight font-weight-bolder">
+                 Expert:
+                 </div>
+                 <div class="col-xs-7 col-sm-9 col-lg-10 col-xl-10 container-fluid">
+                   <button class="btn border border-light btn-primary btn-AshleeYoung"  type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-AshleeYoung"  aria-controls = ".multi-collapse-AshleeYoung"  data-dismiss="modal" >AshleeYoung</button>
+                   <button class="btn border border-light btn-primary btn-FromScratch"  type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-FromScratch"  aria-controls = ".multi-collapse-FromScratch"  data-dismiss="modal" >FromScratch</button>
+                   <button class="btn border border-light btn-primary btn-KeysCoach"    type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-KeysCoach"    aria-controls = ".multi-collapse-KeysCoach"    data-dismiss="modal" >KeysCoach</button>
+                   <button class="btn border border-light btn-primary btn-Mangold"      type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Mangold"      aria-controls = ".multi-collapse-Mangold"      data-dismiss="modal" >Mangold</button>
+                   <button class="btn border border-light btn-primary btn-Musicians"    type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Musicians"    aria-controls = ".multi-collapse-Musicians"    data-dismiss="modal" >Musicians</button>
+                   <button class="btn border border-light btn-primary btn-Pianoly"      type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Pianoly"      aria-controls = ".multi-collapse-Pianoly"      data-dismiss="modal" >Pianoly</button>
+                </div>
+              </div></div>
+           </div>
+
+           <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+              <div class="card card-body" style="background-color:#fadadd">   
+              <div class="row mr-auto                 container-fluid">
+                 <div class="col-xs-5 col-sm-3 col-lg-2 col-xl-2  container-fluid text-nowrap bd-highlight font-weight-bolder">
+                 A-F:
+                 </div>
+                 <div class="col-xs-7 col-sm-9 col-lg-10 col-xl-10 container-fluid">
+                    <button class="btn border border-light btn-primary btn-Al_Stewart"     type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Al_Stewart"   aria-controls = "multi-collapse-Al_Stewart"    >Al_Stewart</button>      
+                    <button class="btn border border-light btn-primary btn-Atlantic"       type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Atlantic"     aria-controls = "multi-collapse-Atlantic"      >Atlantic</button>      
+                    <button class="btn border border-light btn-primary btn-Bachman"        type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Bachman"      aria-controls = "multi-collapse-Bachman"       >Bachman</button>      
+                    <button class="btn border border-light btn-primary btn-Boston"         type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Boston"       aria-controls = "multi-collapse-Boston"        >Boston</button>
+                    <button class="btn border border-light btn-primary btn-Brewer"         type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Brewer"       aria-controls = "multi-collapse-Brewer"        >Brewer</button>      
+                    <button class="btn border border-light btn-primary btn-Creedence"      type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Creedence"    aria-controls = "multi-collapse-Creedence"     >Creedence</button>      
+                    <button class="btn border border-light btn-primary btn-Doobie"         type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Doobie"       aria-controls = "multi-collapse-Doobie"        >Doobie</button>      
+                 </div>
+              </div></div>
+           </div>
+
+           <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+              <div class="card card-body" style="background-color:#fadadd">   
+              <div class="row mr-auto                 container-fluid">
+                 <div class="col-xs-5 col-sm-3 col-lg-2 col-xl-2  container-fluid text-nowrap bd-highlight font-weight-bolder">
+                 F-N:
+                 </div>
+                 <div class="col-xs-7 col-sm-9 col-lg-10 col-xl-10 container-fluid">
+                    <button class="btn border border-light btn-primary btn-Foghat"             type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Foghat"               aria-controls = "multi-collapse-Foghat"               >Foghat</button>      
+                    <button class="btn border border-light btn-primary btn-Four_Seasons"       type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Four_Seasons"         aria-controls = "multi-collapse-Four_Seasons"         >Four_Seasons</button>
+                    <button class="btn border border-light btn-primary btn-Georgia_Satellites" type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Georgia_Satellites"   aria-controls = "multi-collapse-Georgia_Satellites"   >Georgia_Satellites</button>
+                    <button class="btn border border-light btn-primary btn-Grand_Funk"         type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Grand_Funk"           aria-controls = "multi-collapse-Grand_Funk"           >Grand_Funk</button>      
+                    <button class="btn border border-light btn-primary btn-Jerry_Lee_Lewis"    type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Jerry_Lee_Lewis"      aria-controls = "multi-collapse-Jerry_Lee_Lewis"      >Jerry_Lee_Lewis</button>
+                    <button class="btn border border-light btn-primary btn-Joe_Walsh"          type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Joe_Walsh"            aria-controls = "multi-collapse-Joe_Walsh"            >Joe_Walsh</button>      
+                    <button class="btn border border-light btn-primary btn-Nick_Lowe"          type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Nick_Lowe"            aria-controls = "multi-collapse-Nick_Lowe"            >Nick_Lowe </button>
+                 </div>
+              </div></div>
+           </div>
+
+           <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+              <div class="card card-body" style="background-color:#fadadd">   
+              <div class="row mr-auto                 container-fluid">
+                 <div class="col-xs-5 col-sm-3 col-lg-2 col-xl-2  container-fluid text-nowrap bd-highlight font-weight-bolder">
+                 O-S:
+                 </div>
+                 <div class="col-xs-7 col-sm-9 col-lg-10 col-xl-10 container-fluid">
+                    <button class="btn border border-light btn-primary btn-Orleans"               type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Orleans"               aria-controls = "multi-collapse-Orleans"               >Orleans</button>      
+                    <button class="btn border border-light btn-primary btn-Rock_n_Roll_50s_60s"   type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Rock_n_Roll_50s_60s"   aria-controls = "multi-collapse-Rock_n_Roll_50s_60s"  >Rock_n_Roll_50s_60s </button>
+                    <button class="btn border border-light btn-primary btn-Rolling_Stones"        type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Rolling_Stones"        aria-controls = "multi-collapse-Rolling_Stones"       >Rolling_Stones </button>
+                    <button class="btn border border-light btn-primary btn-Steely_Dan"            type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Steely_Dan"            aria-controls = "multi-collapse-Steely_Dan"           >Steely_Dan </button>
+                    <button class="btn border border-light btn-primary btn-Steppenwolf"           type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Steppenwolf"           aria-controls = "multi-collapse-Steppenwolf"               >Steppenwolf</button>      
+                    <button class="btn border border-light btn-primary btn-Sugarloaf"             type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Sugarloaf"             aria-controls = "multi-collapse-Sugarloaf"               >Sugarloaf</button>      
+                 </div>
+              </div></div>
+           </div>
+
+
+           <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+              <div class="card card-body" style="background-color:#fadadd">   
+              <div class="row mr-auto                 container-fluid">
+                 <div class="col-xs-5 col-sm-3 col-lg-2 col-xl-2  container-fluid text-nowrap bd-highlight font-weight-bolder">
+                 A-F:
+                 </div>
+                 <div class="col-xs-7 col-sm-9 col-lg-10 col-xl-10 container-fluid">
+                    <button class="btn border border-light btn-primary btn-Thorogood"            type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Thorogood"            aria-controls = "multi-collapse-Thorogood"               >Thorogood</button>      
+                    <button class="btn border border-light btn-primary btn-Tommy_James"          type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Tommy_James"          aria-controls = "multi-collapse-Tommy_James"               >Tommy_James</button>      
+                    <button class="btn border border-light btn-primary btn-Toto"                 type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Toto"                 aria-controls = "multi-collapse-Toto"    >Toto </button>
+                    <button class="btn border border-light btn-primary btn-Van_Morrison"         type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Van_Morrison"         aria-controls = "multi-collapse-Van_Morrison"         >Van_Morrison </button>
+                    <button class="btn border border-light btn-primary btn-Wilburys"             type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Wilburys"             aria-controls = "multi-collapse-Wilburys"               >Wilburys</button>      
+                 </div>
+              </div></div>
+           </div>
+
+           <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+              <div class="card card-body" style="background-color:#fadadd">   
+              <div class="row mr-auto                 container-fluid">
+                 <div class="col-xs-5 col-sm-3 col-lg-2 col-xl-2  container-fluid text-nowrap bd-highlight font-weight-bolder">
+                 Dreher:
+                 </div>
+                 <div class="col-xs-7 col-sm-9 col-lg-10 col-xl-10 container-fluid">
+                    <button class="btn border border-light btn-primary btn-Dreher_Demo"          type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Dreher_Demo"          aria-controls = "multi-collapse-Dreher_Demo"          >Dreher_Promo</button>      
+                    <button class="btn border border-light btn-primary btn-Dreher_Cover"         type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Dreher_Cover"         aria-controls = "multi-collapse-Dreher_Cover"         >Dreher_Cover </button>
+                    <button class="btn border border-light btn-primary btn-Dreher_Family"        type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Dreher_Family"        aria-controls = "multi-collapse-Dreher_Family"        >Dreher_Family </button>
+                    <button class="btn border border-light btn-primary btn-Dreher_Instrumentals" type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Dreher_Instrumentals" aria-controls = "multi-collapse-Dreher_Instrumentals" >Dreher_Instrumentals </button>
+                    <button class="btn border border-light btn-primary btn-Dreher_Spiritual"     type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Dreher_Spiritual"     aria-controls = "multi-collapse-Dreher_Spiritual"     >Dreher_Spiritual </button>
+                    <button class="btn border border-light btn-primary btn-Dreher_Must_See"      type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Dreher_Must_See"      aria-controls = "multi-collapse-Dreher_Must_See"      >Dreher_Must_See </button>
+                 </div>
+              </div></div>
+           </div>
+
+   
+  </div> <!-- <div class="modal-body">  -->
+  </div> <!-- <div class="modal-content"> -->
+  </div> <!-- <div class="modal-dialog modal-lg"> -->
+  </div> <!-- <div class="modal fade" id="myModal" role="dialog">  --
+
+
+              <!-- PRIME UI - BUTTONS MAIN - WEBS - DENNIS - FOOTER -----------------------------------------------------------------------------------------------------  -->
+
+              <div class="card card-body sticky-top  BUTTONS" style="background-color:#feeb10; padding:5px;">
+              <div class="dropdown">
+                  <span class="text-nowrap bd-highlight font-weight-bolder">Show: (v3.4)</span>
+                  <button class="btn border border-light btn-primary btn-all"                  type= "button">All</button>
+                  <button class="btn border border-light btn-primary btn-Favorite"                type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Favorite"             aria-controls = "multi-collapse-Favorite"       >Favorites</button>
+                  <button class="btn border border-light btn-primary btn-Theory"               type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Theory"            aria-controls = "multi-collapse-Theory"      >Theory</button>
+                  <button class="btn border border-light btn-primary btn-BEAT"                 type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-BEAT"              aria-controls = "multi-collapse-BEAT"        >Beat</button>
+                  <button class="btn border border-light btn-primary btn-MUST"                 type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-MUST"              aria-controls = "multi-collapse-MUST"        >Must</button>
+                  <button class="btn border border-light btn-primary btn-Daily"                type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Daily"             aria-controls = "multi-collapse-Daily"       >Daily</button>
+                  <button class="btn border border-light btn-primary btn-Kayla"                type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Kayla"             aria-controls = "multi-collapse-Kayla"       >Kayla</button>
+                  <button class="btn border border-light btn-primary btn-Stock"                type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-Stock"             aria-controls = "multi-collapse-Stock"       >Stock</button>
+                  <button class="btn border border-light btn-primary btn-MODAL"                type= "button"  data-toggle="modal" data-target="#myModal">More</button>
+
+              </div>
+              </div>
+
+
+
+              <!-- DENNIS STATIC VIDEOS -->
+              <div class="card card-body Dennis"  style="padding:0px; margin:0px; border:0px; "> 
+              <div class="row mr-auto container-fluid collapse cc multi-collapse-Dennis .multi-collapse-Dennis show"> 
+              <h2                       class="         container-fluid text-center collapse cc multi-collapse-Dennis .multi-collapse-Dennis show" style=" padding:0px; margin:0px; border:5px solid #000000; background-color:#6ca7a5;" >Dennis </h2>
+              </div>
+              <div class="row mr-auto container-fluid collapse cc multi-collapse-Dennis .multi-collapse-Dennis show" >
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4 container-fluid "     style="background-color:#fadadd;        padding:0px; margin:0px; border:5px solid #000000;" >
+                     <h2                class="       container-fluid text-center" style="padding:0px; margin:0px; background-color:#fadadd">Dennis John Dreher - Last Train Home</h2>
+                     <div class=" container-fluid pre-scrollable" style="min-height: 390px;               padding:0px; margin:0px">
+                     <a target="_blank" href="https://youtu.be/FvRIkbZ8-yY?si=TGDTDOg43WicdKUC">
+                     <img id="imageP" class="container-fluid" style="min-height: 100px; height: 100%; width: 100%; object-fit: contain; padding:0px; margin:0px"
+                          src="./images/LastTrainHome.jpg" alt="Photo1">
+                     </a>
+                     </div>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4 container-fluid "     style="background-color:#fadadd;        padding:0px; margin:0px; border:5px solid #000000;" >
+                     <h2                class="       container-fluid text-center" style="padding:0px; margin:0px; background-color:#fadadd">Ghost - Unchained Melody - Righteous Brothers</h2>
+                     <div class=" container-fluid pre-scrollable" style="min-height: 390px;               padding:0px; margin:0px">
+                     <a target="_blank" href="https://www.youtube.com/watch?v=587oWTI9twM">
+                     <img id="imageP" class="container-fluid" style="min-height: 100px; height: 100%; width: 100%; object-fit: contain; padding:0px; margin:0px"
+                          src="https://i.ytimg.com/vi/587oWTI9twM/hqdefault.jpg" alt="Photo1">
+                     </a>
+                     </div>
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4 container-fluid " style="padding:0px; margin:0px; border:5px solid #000000; background-color:#fadadd;">
+                     <h2 class="container-fluid text-center" style="padding:0px; margin:0px; background-color:#fadadd">Dennis Dreher - Like an Old Friend</h2>
+                     <div class="scrolP   container-fluid pre-scrollable" style="min-height: 390px; padding:0px; margin:0px">
+                     <a target="_blank" href="https://www.youtube.com/watch?v=f3IyPHkyX00">
+                     <img id="imageP" class="container-fluid" style="min-height: 100px; height: 100%; width: 100%; object-fit: contain; padding:0px; margin:0px" 
+                          src="https://i.ytimg.com/vi/f3IyPHkyX00/hqdefault.jpg" alt="Photo1">
+                     </a>
+                     </div>
+                  </div>
+              </div>
+              </div>
+
+              <!-- ADD VIDEOS from Javascript  -->
+              <div id="wrapper" class="card card-body LIST"  style="padding:5px;">
+              </div>
+
+              <textarea id="myTextBox1" rows="5" cols="50" style="display: none;" ></textarea>
+              <textarea id="myTextBox2" rows="5" cols="50" style="display: none;" ></textarea>
+
+
+              <div class="card card-body Stock"  style="padding:0px; margin:0px; border:0px; "> 
+              <div class="row mr-auto container-fluid collapse cc multi-collapse-Stock .multi-collapse-Stock show"> 
+              <h2                       class="         container-fluid text-center collapse cc multi-collapse-Stock .multi-collapse-Stock show" style=" padding:0px; margin:0px; border:5px solid #000000; background-color:#6ca7a5;" >Stock </h2>
+
+
+           <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+              <div class="card card-body" style="background-color:#fadadd">   
+              <div class="row mr-auto                 container-fluid">
+                 <div class="col-xs-5 col-sm-3 col-lg-2 col-xl-2  container-fluid text-nowrap bd-highlight font-weight-bolder">
+                 Pick:
+                 </div>
+                 <div class="col-xs-7 col-sm-9 col-lg-10 col-xl-10 container-fluid">
+                   <button class="btn border border-light btn-primary btn-TALL"  type= "button" onclick="FindTran2('All')"  >All</button>
+                   <button class="btn border border-light btn-primary btn-THide" type= "button" onclick="FindTran2('Hide')" >Hide</button>
+                   <button class="btn border border-light btn-primary btn-Buy"   type= "button" onclick="FindTran('Buy')"  >Buy</button>
+                   <button class="btn border border-light btn-primary btn-Sell"  type= "button" onclick="FindTran('Sell')" >Sell</button>
+                   <button class="btn border border-light btn-primary btn-Div"   type= "button" onclick="FindTran('Div')"  >Div</button>
+                   <button class="btn border border-light btn-primary btn-Fund"  type= "button" onclick="FindTran('Fund')" >Fund</button>
+                   <button class="btn border border-light btn-primary btn-KHC"   type= "button" onclick="FindTran('KHC')"  >KHC</button>
+                   <button class="btn border border-light btn-primary btn-SMG"   type= "button" onclick="FindTran('SMG')"  >SMG</button>  
+                   <button class="btn border border-light btn-primary btn-CBRL"  type= "button" onclick="FindTran('CBRL')" >CBRL</button>
+                   <button class="btn border border-light btn-primary btn-WEN"   type= "button" onclick="FindTran('WEN')"  >WEN</button>
+                   <button class="btn border border-light btn-primary btn-Oth"   type= "button" onclick="FindTran('Oth')"  >Oth</button>
+                   <button class="btn border border-light btn-primary btn-Oth"   type= "button" onclick="BuildTran()"  >BUILD</button>
+                </div>
+              </div></div>
+           </div>
+
+
+              </div>
+                  <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+                  <div class="card card-body" style="background-color:#fadadd"> 
+                  <div class="row mr-auto container-fluid">
+                  <table style="border:1px solid black; background-color: white; ">
+
+                  <tbody id='myTbl' class="row mr-auto container-fluid px-1">
+
+                  </tbody></table>
+                  <br>
+
+                  <textarea id="RawList"  name="rawcsv"   rows="3" class="container-fluid text-nowrap" >Paste raw trade csv.</textarea>
+                  <textarea id="TagsList" name="cleancsv" rows="3" class="container-fluid text-nowrap" >Clean.</textarea>
+                  <textarea id="CutJSON"  name="cutjson1" rows="3" class="container-fluid text-nowrap" >JSON</textarea>
+                  <textarea id="RowPick"  name="rowPick1" rows="1" class="container-fluid text-nowrap" ></textarea>
+                  <input id='me1' type="text"  style="width: 50px" onmouseleave="ckMe()" ontouchend="ckMe()"  > 
+                  <input id='me2' type="text"  style="width: 50px" onmouseleave="ckMe()" ontouchend="ckMe()"   >
+
+                  </div></div></div>
+              </div>
+
+              </div>
+                  <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+                  <div class="card card-body" style="background-color:#fadadd"> 
+                  <div class="row mr-auto container-fluid">
+                  <table style="border:1px solid black; background-color: white; ">
+                  <tbody class="row mr-auto container-fluid px-1">
+</tr> 
+<tr class="row mr-auto container-fluid tAll OTH FIX"> 
+
+<!-- DTSymAct --> <td class="col-8 col-xs-8 col-sm-8 col-md-8" style="border: 1px solid black; min-width: 30%; max-width: 60%;">07/01 KHC Sell</td> <!-- WORKS phone TOO big -->
+<!-- Shares   --> <td class="col-sm-6" style="border: 1px solid black; min-width: 10%; max-width: 15%;">25</td> 
+<!-- Price    --> <td class="col-sm-4" style="border: 1px solid black; min-width: 20%; max-width: 25%;">24.8951</td> 
+<!-- Tot      --> <td class="col-sm-8" style="border: 1px solid black; min-width: 20%; max-width: 25%;">622.37</td> 
+
+<!-- Shares   --> <td class="col-sm-4" style="border: 1px solid black; max-width: 15%; background-color: yellow;"  ></td> 
+<!-- Price    --> <td class="col-sm-6" style="border: 1px solid black; max-width: 33%; background-color: green; "  ></td>  <!-- Maybe good change 30 to 33 n 4 t 6 -->
+<!-- Tot      --> <td class="col-sm-8" style="border: 1px solid black; max-width: 30%;">FIX</td>  
+
+<!-- % 1m13d  --> <td class="col-sm-4" style="border: 1px solid black; max-width: 32%;"></td>  
+<!-- xDiv %   --> <td class="col-sm-4" style="border: 1px solid black; max-width: 32%;">x0614</td> 
+<!-- nn Lot   --> <td class="col-sm-4" style="border: 1px solid black; max-width: 20%;">1 L10</td> 
+</tr> 
+                  </tbody></table>
+                  </div></div></div>
+              </div>
+
+
+              <!-- FOOTER  -->
+              <div class="card card-body FOOT" style="background-color:#feeb10; padding:5px;">
+                   <div class="text-center">                                                                    Website designed by John Meistrell NJ
+                   <a target="_blank" href="mailto:J.MeistrellMA@gmail.com"                                     >Email: J.MeistrellMA@gmail.com</a>
+                   <a target="_blank" href="https://github.com/JohnMeistrell/MA/wiki"                           >Web: https://github.com/JohnMeistrell/MA/wiki</a>
+                   Version(v3.0)
+              </div>
+              </div>
+
+<!-- MAIN CONTAINER BOT -->
+</div> <!-- <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12"> -->
+</div> <!-- <div class="cc" > -->
+
+<!--  -->
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+/* -------------------------------------------------------------------------------------------------------------------------------------------*/
+function windowLoaded() 
+/* -------------------------------------------------------------------------------------------------------------------------------------------*/
+  {
+   }
+</script>
+
+<script type="text/javascript">
+
+function ckMe() {
+
+ var tMeIn = document.getElementById('RawList');
+ var tMe1 = document.getElementById('me1').value;  
+ var tMe2 = document.getElementById('me2').value; 
+
+ document.getElementById('CutJSON').value = 'ckMe: step1 ' + tMe1 +' '+ tMe2; 
+
+ if ( tMe1 === 'jj' && tMe2 === 'jj' ) {
+    if (tMeIn.value.trim() === "") {
+        tMeIn.value = transIn;
+        document.getElementById('myTbl').innerHTML = '';
+        document.getElementById('CutJSON').value = 'ckMe: step2 ' + tMe1 +' '+ tMe2  +' '+ transIn;
+    }
+ }
+
+}
+
+function BuildTran() {
+
+
+
+  /* Get raw csv from 1st box. Should be free of commas. Remove double quotes and dollar signs. */
+  var textarea = document.getElementById('RawList'); /* remove($ , -) */ let text = textarea.value.trim();  text = text.replaceAll('"',''); text = text.replaceAll("$",''); text = text.replaceAll("-",''); 
+
+text = text.replaceAll('MoneyLink Transfer','ach');
+text = text.replaceAll('as of ',''); 
+text = text.replaceAll('/2026',''); 
+text = text.replaceAll('JOHN MEISTRELL','jfm'); 
+text = text.replaceAll('Qualified Dividend','Div'); 
+
+  var aNewTags2 = [];  var aLines = text.split(/\r?\n/);  
+  aLines.forEach((elem1,index) => { const uniqueId = index + 1; elem2 = uniqueId +","+ elem1;  aNewTags2.push( elem2 );  }); aNewTags2.reverse();
+  var textarea2 = document.getElementById('TagsList');   var newLineString = aNewTags2.join('\n'); textarea2.value = newLineString;
+
+  var dataArray2 = aNewTags2.map(row => row.split(","));
+
+  var dataArray = text   .trim()  .split("\n")  .map(row => row.split(",")); 
+
+  var codeBlock = ''; var classBlock = '';
+
+  /* Row and Columns */
+  var eTDleft = '<td style="border: 1px solid black;" >'; /* Row */
+
+  var nn = 0;
+  for (var [vNN, vDate , vAction , vSymbol , vDescription , vQuantity , vPrice , vFees , vAmount ] of dataArray2 ) {
+    nn += 1; classBlock = 'tAll ' + vSymbol; if ( vAction === 'Buy' ) { classBlock += ' Buy' } else if ( vAction === 'Sell' ) { classBlock += ' Sell' } else if ( vAction === 'Div' ) { classBlock += ' Div' } else if ( vAction === 'ach' ) { classBlock += ' Fund' } else classBlock += ' Oth'
+ 
+    codeBlock += '<tr class="row mr-auto container-fluid ' + classBlock + '"> \n'; /* Columns */
+    codeBlock += '<td class="col-md-1" style="border: 1px solid black; max-width: 20%;">' + vDate + ' ' + vSymbol + ' ' + vAction + '</td> \n';
+    codeBlock += '<td class="col-md-1" style="border: 1px solid black; max-width: 15%;">' + vQuantity   +                           '</td> \n';
+    codeBlock += '<td class="col-md-1" style="border: 1px solid black; max-width: 22%;">' + vPrice      +                           '</td> \n';
+    codeBlock += '<td class="col-md-2" style="border: 1px solid black; max-width: 25%;">' + vAmount     +                           '</td> \n';
+    codeBlock += '<td class="col-md-1" style="border: 1px solid black; max-width: 15%; background-color: yellow;" contenteditable="true" onmouseleave="calcTot(this)" ontouchend="calcTot(this)" ></td> \n';
+    codeBlock += '<td class="col-md-1" style="border: 1px solid black; max-width: 22%; background-color: green; " contenteditable="true" onmouseleave="calcTot(this)" ontouchend="calcTot(this)" ></td> \n';
+    codeBlock += '<td class="col-md-2" style="border: 1px solid black; max-width: 25%;"></td>  \n';
+    codeBlock += '<td class="col-md-1" style="border: 1px solid black; max-width: 15%;"></td>  \n';
+    codeBlock += '<td class="col-md-1" style="border: 1px solid black; max-width: 15%;">x0614</td> \n';
+    codeBlock += '<td class="col-md-1" style="border: 1px solid black; max-width: 15%;">' + vNN  + ' L10</td> \n';
+    codeBlock += '</tr> \n';
+
+  }
+  var textarea3 = document.getElementById('CutJSON');   textarea3.value = codeBlock ;
+  var myTrans = document.getElementById('myTbl'); 
+  myTrans.insertAdjacentHTML('beforeend', codeBlock );
+}
+</script>
+
+<script>
+
+function FindTran2(selSet) {
+     var eC = document.getElementsByClassName('tAll');
+     if        (selSet == 'Hide') {    for (var eT of eC) { eT.hidden = true;  };     } 
+     if        (selSet == 'All')  {    for (var eT of eC) { eT.hidden = false; };     } 
+}
+
+function FindTran(selSet) {
+    var eC = document.getElementsByClassName('tAll');
+    for (var eT of eC) { eT.hidden = true;  };    
+    var eC = document.getElementsByClassName(selSet);
+    console.log( selSet );
+    console.log( eC );
+    for (var eT of eC) { eT.hidden = false; }
+ }
+</script>
+
+
+<script>
+
+function calcTot(e) {
+
+const getDaysBetween = (date1, date2) => {
+  const msPerDay = 1000 * 60 * 60 * 24;
+  const utc1 = Date.UTC(date1.getFullYear(), date1.getMonth(), date1.getDate());
+  const utc2 = Date.UTC(date2.getFullYear(), date2.getMonth(), date2.getDate());
+  return Math.floor(Math.abs(utc2 - utc1) / msPerDay);
+};
+
+
+  var eRow = e.parentElement;
+  var eDateSymAct      = eRow.cells[0].textContent;
+  var eQuantity        = parseFloat(eRow.cells[1].textContent);
+  var ePrice           = parseFloat(eRow.cells[2].textContent);
+  var eTotAmt          = parseFloat(eRow.cells[3].textContent);
+
+  var eSellQuanity     = parseFloat(eRow.cells[4].textContent);
+  var eSellPrice       = parseFloat(eRow.cells[5].textContent);
+  var eSellDollar      = eRow.cells[6].textContent;
+
+  var eSellPercentDays = eRow.cells[7].textContent;
+  var eXdiv            = eRow.cells[8].textContent;
+  var eNNlot           = eRow.cells[9].textContent;
+
+  if ( ( typeof ePrice === 'number' && !isNaN( ePrice ) ) &&  ( typeof eSellPrice === 'number' && !isNaN( eSellPrice ) ) ) {
+
+     if ( isNaN( eSellQuanity ) ) { eSellQuanity = eQuantity ; eRow.cells[4].textContent = eQuantity  }
+
+     var nProfitShare = eSellPrice - ePrice ;
+     var nProfit      = ( nProfitShare * eSellQuanity ).toFixed(2);
+     var nPercent     = ( ( nProfitShare / ePrice ) * 100 ).toFixed(2);
+
+     var sDateBuymmdd = eDateSymAct .slice(0, 5); 
+
+     var [eDate , eSym , eAct] = eDateSymAct.split(' ');
+     var ymd = ( '2026/' + eDate ).replace("/", "-"); ;
+
+
+var d1 = new Date("2026-01-01"); d1 = new Date(ymd);
+var d2 = new Date("2026-07-11"); d2 = new Date("2026-05-07");
+var dd = getDaysBetween(d1, d2); 
+
+var inM = Math.trunc(dd / 30);
+var inD = dd % 30;
+
+     eRow.cells[6].textContent = nProfit;
+     eRow.cells[7].textContent = nPercent + '% ' + inM + "m" + inD + 'd' ;
+
+
+     console.log( eSellPrice +' '+ ePrice  +' '+ eProfitShare.toFixed(2) +' '+ eProfit   ); 
+  }
+
+}
+
+</script>
+
+
+</script>
+
+<script>
+
+  const mapRR = mapVideoDetails.map(([ 
+     vtag, vID , vTitle , vAuthor , vImage , vURL , vTimes , vCat , vMix , vNames , vFingers , vInstrument , vLyrics , vExpert , vRate , vMulti ]) => ({ 
+     vtag, vID , vTitle , vAuthor , vImage , vURL , vTimes , vCat , vMix , vNames , vFingers , vInstrument , vLyrics , vExpert , vRate , vMulti }));
+
+  const mapSet1 = mapRR.filter(user => user.vCat === '1'); /* -Favorite  */
+  const mapSet2 = mapRR.filter(user => user.vCat === '2'); /* -Pianno */
+  const mapSet3 = mapRR.filter(user => user.vCat === '3'); /* -Theory */
+  const mapSet4 = mapRR.filter(user => user.vCat === '4'); /* -Beat   */
+  const mapSet5 = mapRR.filter(user => user.vCat === '5'); /* -Kayla  */
+  const mapSet6 = mapRR.filter(user => user.vCat === '6'); /* -Bands (Stones...) */ 
+  const mapSet7 = mapRR.filter(user => user.vCat === '7'); /* -Nature */
+  const mapSet8 = mapRR.filter(user => user.vCat === '8'); /* -Surf   */
+  const mapSet9 = mapRR.filter(user => user.vCat === '9'); /* -Dennis */
+  var mapSet  = mapSet3;
+
+  function playRandom(selSet) {
+
+     var idSelBigBox   = document.getElementById("idSelBigBox");
+     idSelBigBox.hidden = false;
+
+
+     if        (selSet == '1') { mapSet = mapSet1;
+     } else if (selSet == '2') { mapSet = mapSet2;
+     } else if (selSet == '3') { mapSet = mapSet3;
+     } else if (selSet == '4') { mapSet = mapSet4;
+     } else if (selSet == '5') { mapSet = mapSet5;
+     } else if (selSet == '6') { mapSet = mapSet6;
+     } else if (selSet == '7') { mapSet = mapSet7;
+     } else if (selSet == '8') { mapSet = mapSet8;
+     } else if (selSet == '9') { mapSet = mapSet9;
+
+     } else if (selSet == 'Hide') { 
+       idSelBigBox.hidden = true;
+     } else {                    mapSet = mapSet3;
+     }
+
+/*
+     if        (selSet == '1') { mapSet = mapSet1;
+     } else if (selSet == '2') { mapSet = mapSet2;
+     } else if (selSet == '3') { mapSet = mapSet3;
+     } else if (selSet == 'Hide') { 
+       idSelBigBox.hidden = true;
+     } else {                    mapSet = mapSet3;
+     }
+*/
+
+
+     var selRow   = Math.floor(Math.random() * mapSet.length);
+     var selTitle = mapSet[selRow].vTitle;
+     var selURL   = mapSet[selRow].vURL;
+     var selImage = mapSet[selRow].vImage;
+
+     var msg1 = "Picked: " + selRow +" "+  selTitle ;
+     console.log(msg1);
+
+     var idSelURL   = document.getElementById("idSelURL");
+     var idSelImage = document.getElementById("idSelImage");
+     var idSelTitle = document.getElementById("idSelTitle");
+
+     idSelTitle.innerHTML = msg1;
+     idSelURL.href        = selURL;
+     idSelImage.src       = selImage;
+
+
+
+  }
+
+</script>
+
+
+<script type="text/javascript">
+/* -------------------------------------------------------------------------------------------------------------------------------------------*/
+function Data(el,eItem)
+/* -------------------------------------------------------------------------------------------------------------------------------------------*/
+ {
+    var itemT =  el.name;
+    window.alert(eItem);
+
+ } 
+</script>
+
+
+
+<script type="text/javascript">
+
+function isNotEmpty(value) {
+      return value != null && String(value).trim().length > 0;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------*/
+var saveR = [];
+
+  var aTagsList = [];
+
+  var codeBlock = ''; var colN = 0; var nItem = 0; var msgItem = ''; 
+
+  var E2row   = ''; /* HEADING TAG */
+  var E2rowA  = '\n\n<div class="row mr-auto container-fluid collapse cc show' ;
+  var E2rowB  = '';
+  var E2rowC  = '">';
+
+  var E3CatA  = '\n<div class="card card-body"   style="padding:0px; margin:0px; border:0px; ">';
+  var E3CatB  = '\n\n     <div class="row mr-auto container-fluid collapse cc ';
+  var E3CatC  = '';
+  var E3CatD  = ' show">'; 
+  var E3CatE  = '\n     <h2 class="container-fluid text-center" style=" padding:0px; margin:0px; border:5px solid #000000; background-color:#6ca7a5;" >';
+  var E3CatF  = '';
+  var E3CatG  = '</h2>';
+  var E3CatH  = '\n     </div>';
+  var E3CatH2 = '\n</div>';
+
+  var E3colA  =    '\n\n     <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4 container-fluid myCol ' /* 1022 this breaks it: collapse cc myCol show */
+  var E3colB  = '" style="padding:0px; margin:0px; border:5px solid #000000; background-color:#fadadd;">';  
+
+  var E4itemB =  '\n     <h2  class="container-fluid text-center" style="padding:0px; margin:0px; background-color:#fadadd">';
+  var E4itemE =  '</h2>';
+
+  var E5scrol =  '\n     <div class="scrolP container-fluid pre-scrollable" style="min-height: 390px; padding:0px; margin:0px">'
+
+  var E6imagB1 = '\n       <a target="_blank" href="';
+  var E6imagB2 = '';
+  var E6imagB3 = '">\n       <img id="imageP" class="container-fluid" style="min-height: 100px; height: 100%; width: 100%; object-fit: contain; padding:0px; margin:0px" src="';           
+  var E6imagB4 =  '';
+  var E6imagBE =  '" alt="Photo1" >\n       </a>';
+
+  var E7divEA  = '\n</div>' /* ROW end random WHY */
+  var E7divEB  = '\n     </div>' /* COL end */
+  var E7divEC  = '</div>'        /* COL HEADER end */
+  var E7divED  = '\n\n</div>'; /* ROW end */
+  var E7divEE  = '\n\n\n</div>'; /* NOT USED */
+  var E7divEF  = '\n\n</div>'; /* ROW end LAST */
+
+  var ElemTest = '';
+
+  var sName = '';
+
+
+/* List of tags to add buttons for */
+let tagList = []; 
+let showClassScript = '';
+let buttonClass = '';
+
+  /* Image from GitHub C DRIVE (start) -----------------------------------------------------------------*/
+  if ( imageSource == "Laptop" ) {
+ 
+     var lastItemSelectionBuilt = ''
+     const mapVV = mapVideoDetails.map(([ 
+                 vtag, vID , vTitle , vAuthor , vImage , vURL , vTimes , vCat , vMix , vNames , vFingers , vInstrument , vLyrics , vExpert , vRate , vMulti ]) => ({ 
+                 vtag, vID , vTitle , vAuthor , vImage , vURL , vTimes , vCat , vMix , vNames , vFingers , vInstrument , vLyrics , vExpert , vRate , vMulti }));
+
+     console.log("Total Rows: " + mapVV.length);
+
+     for (const [vtag, vID , vTitle , vAuthor , vImage , vURL , vTimes , vCat , vMix , vNames , vFingers , vInstrument , vLyrics , vExpert , vRate , vMulti ] of mapVideoDetails) {
+
+        /* console.log('hhhh ' + vID + ' ' +  vURL); */
+
+  aTagsList.push(vtag);
+
+  var codeStartAt = '';
+
+  const aTimesRow = vTimes.split("^");
+  if (aTimesRow[1]) {
+      aTimesRow.forEach((aTimeR, index, array) => {
+         if (index !== 0) {
+         const aTimesRowItem = aTimeR.split(" - ");
+         var aTimeRowAt    = aTimesRowItem[0];
+         var aTimeRowTitle = aTimesRowItem[1];
+         codeStartAt += '<a style="font-size: 80%" target="_blank" href="' + vURL + '&t=' + aTimeRowAt + '">' + aTimeRowTitle + '</a> ';
+         }
+      })
+  }
+
+
+/* List of tags to add buttons for */
+let tagThisOne = [];
+if ( vMix        !== '') { tagList.push('vMix - '        + vMix       ) ; aTagsList.push(vMix)        ; tagThisOne.push(vMix        );  };
+if ( vNames      !== '') { tagList.push('vNames - '      + vNames     ) ; aTagsList.push(vNames)      ; tagThisOne.push(vNames      );  };
+if ( vFingers    !== '') { tagList.push('vFingers  - '   + vFingers   ) ; aTagsList.push(vFingers)    ; tagThisOne.push(vFingers    );  };
+if ( vInstrument !== '') { tagList.push('vInstrument - ' + vInstrument) ; aTagsList.push(vInstrument) ; tagThisOne.push(vInstrument );  };
+if ( vLyrics     !== '') { tagList.push('vLyrics  - '    + vLyrics    ) ; aTagsList.push(vLyrics)     ; tagThisOne.push(vLyrics     );  };
+if ( vExpert     !== '') { tagList.push('vExpert  - '    + vExpert    ) ; aTagsList.push(vExpert)     ; tagThisOne.push(vExpert     );  };
+if ( vRate       !== '') {
+     const vRateArray = vRate.split(" - ");
+     vRateArray.forEach((vRateItem, index, array) => {
+       if ( vRateItem.trim()  !== '') {    aTagsList.push(vRateItem) ; 
+          if (index = 0) {
+          tagList.push(  'vRate - '        + vRateItem      )  ; 
+          } else {
+          tagList.push(  'vMulti - '       + vRateItem      ) ; 
+          }
+          tagThisOne.push(vRateItem    );  
+       }
+     })
+};
+
+if ( vMulti       !== '') {
+     const vMultiArray = vMulti.split(" - ");
+     vMultiArray.forEach((vMultiItem, index, array) => {
+       if ( vMultiItem.trim()  !== '') {    aTagsList.push(vMultiItem) ; 
+          /* console.log("vMulti: " + vMultiItem.trim() + " " +  vtag  + " " +  vTitle); */
+          if (index = 0) {
+          tagList.push(  'vMulti - '       + vMultiItem      ) ; 
+          } else {
+          tagList.push(  'vMulti - '       + vMultiItem      ) ; 
+          }
+          tagThisOne.push(vMultiItem    );  
+       }
+     })
+};
+
+
+        tagClass = vtag;
+
+        sName = vTitle;
+
+        /* console.log('jmTimes: ' + vTimes); */
+
+
+        let tagsCOL = "";
+        let tagsAdd = "";
+        let tagsHDR = "";
+        tagThisOne.forEach((aItem, index, array) => {
+           tagsAdd += " multi-collapse-" + aItem + " .multi-collapse-" + aItem + " " + aItem + " " ;   /* 1022w added aItem */
+           tagsCOL +=  " " + aItem + " " ;   /* 1022w added aItem */
+           tagsHDR += aItem + " ";
+        }) ;
+  
+         /* -------------------------------------------------------------------- */     
+        /* 001 COMMON CODE START (MUST COPY see way below in from GITHUB section  */
+        /* -------------------------------------------------------------------- */  
+
+
+        E2row = E2rowA + " multi-collapse-" + tagClass + " .multi-collapse-" + tagClass + tagsAdd + E2rowC ;
+
+        /* console.log("JJJJ tagsAdd: " + tagsAdd); */
+
+        colN = colN + 1;
+        if ( lastItemSelectionBuilt == tagClass ) {
+        } else {
+          if ( colN > 1 ) {
+               colN = 1;
+               codeBlock += E7divEA; /* </div> Closes off prior Video BOX */
+          } 
+               codeBlock += E3CatA;
+               codeBlock += E3CatB;
+               codeBlock += E3CatC + "multi-collapse-" + tagClass + " .multi-collapse-" + tagClass + tagsAdd;
+
+               codeBlock += E3CatD;
+               codeBlock += E3CatE;
+               codeBlock += E3CatF + tagClass ;
+               codeBlock += E3CatG;
+               codeBlock += E3CatH;
+               codeBlock += E3CatH;
+
+        }
+
+        lastItemSelectionBuilt = tagClass;
+
+
+        /* ROW ------------------------ */
+        if (colN == 1 ) { codeBlock += E2row; }
+
+        nItem = nItem + 1;
+        msgItem  = '"buyMsgID' + nItem + '"';
+
+        /* COL ------------------------ */
+        codeBlock += E3colA + tagsCOL;    /* 1022w <div class="mcol-xs-5 col-sm-5 col-lg-5 col-xl-5 ... */
+        codeBlock += tagClass;
+        codeBlock += E3colB;
+
+        /* HDR --------------------- */
+        codeBlock += E4itemB;  /* <h2  id="titleM" class="         container-fluid ... */
+        codeBlock += sName + '<p style="font-size: 30%" >' + tagsHDR + '</p>';    /* Card heading */
+        codeBlock += E4itemE;
+        codeBlock += codeStartAt;
+
+        /* SCR/IMG: --------------------- */
+        codeBlock += E5scrol;   /* <div id="scrolP" class="scrolP   container-fluid ... */
+        codeBlock += E6imagB1;  /* '<a target="_blank" href="'; */
+        codeBlock += vURL; 
+        codeBlock += E6imagB3;  /* '"><img id="imageP" class="container-fluid" style="min */
+        codeBlock += vImage; 
+        codeBlock += E6imagBE; /* '" alt="Photo1" ></a>'; */
+        codeBlock += E7divEB;
+
+        /* COL ------------------------ */
+        codeBlock += E7divEC;
+
+        /* ROW ------------------------ */
+        if (colN == 3 ) { codeBlock += E7divED; /* console.log("ROW END DIV" + colN); */ colN = 0; }
+
+        /* -------------------------------------------------------------------- */
+        /* 001 COMMON CODE END                                                  */
+        /* -------------------------------------------------------------------- */
+
+
+
+     } /* for (const */
+
+     var htmlTagButtons = ' '; var htmlJSbottom = ' '; 
+     var aTagsListSorted = [...new Set(aTagsList)].sort();  
+     var tempLine = '';
+     aTagsListSorted.forEach((aItem1, index1) => {
+       tempLine = '<button class="btn border border-light btn-primary btn-' +aItem1+ '" type= "button" data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal" data-target = ".multi-collapse-' +aItem1+ '" aria-controls = "multi-collapse-' +aItem1+ '" >' +aItem1+ '</button>';
+       htmlTagButtons += tempLine + '\n' ;
+       tempLine = '$(".btn-' +aItem1+ '").click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("' +aItem1+ '"); $(".myCol").removeClass("collapse"); $(".myCol:not(.' +aItem1+ ')").addClass("collapse");    });';
+       htmlJSbottom  += tempLine + '\n' ;
+     });
+
+     console.log(htmlTagButtons);
+     console.log(htmlJSbottom); 
+
+ 
+  }
+  /* Image from GitHub C DRIVE (end) -----------------------------------------------------------------*/
+
+
+  codeBlock += 	E7divEF; 
+
+  const newNode = document.getElementById("wrapper");
+
+  document.getElementById("wrapper").innerHTML = codeBlock;
+
+  /* List of tags to add buttons for. Sort and remove duplicates. */
+  tagList.sort();                                          /* console.log('tagList: ' + tagList ); */
+  const tagListUniqueSorted = [...new Set(tagList)];
+  tagListUniqueSorted.sort();                              /* console.log('tagListUniqueSorted: ' + tagListUniqueSorted ); */
+
+
+  tagListUniqueSorted.forEach((aItem, index, array) => {
+  
+     let aThisItem = aItem.split("-");
+     /* console.log("aThisItem: " + aThisItem[0] + ' ' + aThisItem[1] ); */
+
+     var aThisItemREG    = aThisItem[1].trim();                                         var aThisItemREGq    = aThisItemREG + '"';                 
+     var aThisItemLC     = aThisItem[1].trim().toLowerCase();                           var aThisItemLCq     = aThisItemLC + '"'; 
+     var aThisItemProper = aThisItemLC.charAt(0).toUpperCase() + aThisItemLC.slice(1);  var aThisItemProperq = aThisItemProper + '"'; 
+
+     aThisItemREG = aThisItemREG.padEnd(20); 
+     aThisItem30  = aThisItemProper.padEnd(20);
+
+     aThisItemREGq = aThisItemREGq.padEnd(20); 
+     aThisItem30q  = aThisItemProperq.padEnd(20);
+
+     showClassScript +=  '   $(".btn-' + aThisItemREGq  + ').click(function(){ ' 
+
+     showClassScript +=    ' $(".collapse").removeClass("show");';       showClassScript +=   ' $("#curTag").text("' + aThisItem30q + ');';  
+
+     showClassScript +=    ' $(".myCol").removeClass("collapse");';      showClassScript +=  ' $(".myCol:not(.' + aThisItem30 + ')").addClass("collapse");    }); \r\n'; 
+
+     buttonClass     += '    <button class="btn border border-light btn-primary btn-' + aThisItem[1] + '"     type= "button"  data-toggle = "collapse" aria-expanded = "false" data-dismiss="modal"data-target = ".multi-collapse-' + aThisItem[1] + '"    aria-controls = ".multi-collapse-' + aThisItem[1] + '"      >' + aThisItem[1] + '</button>\r\n'; 
+
+  });
+
+const textBox1 = document.getElementById("myTextBox1"); textBox1.value = showClassScript;
+const textBox2 = document.getElementById("myTextBox2"); textBox1.value = buttonClass;
+
+</script>
+
+<script>
+/* -------------------------------------------------------------------------------------------------------------------------------------------*/
+$(document).ready(function(){
+/* -------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* $(".myCol:not(.Daily)").removeClass("show");    $(".myCol:not(.Daily)").addClass("collapse");   <div class="col-xs-4 col-sm-4 col-lg-4 col-xl-4 container-fluid Theory collapse cc myCol show" style=  */
+
+
+/* $(".myCol:not(.Daily)").addClass("collapse"); $(".myCol:not(.Daily)").addClass("collapse"); $("#curTag").text("Daily"              ); */
+
+   $(".btn-all"                ).click(function(){  $(".collapse").addClass("show")   ;                                                     $(".myCol").removeClass("collapse");  });
+   $(".btn-none"               ).click(function(){  $(".collapse").removeClass("show");  });
+
+   $(".btn-Favorite"              ).click(function(){  $(".collapse").removeClass("show"); $('#curTag').text("Favorites"          ); $(".myCol").removeClass("collapse");  }); 
+   $(".btn-Theory"             ).click(function(){  $(".collapse").removeClass("show"); $('#curTag').text("Theory"             ); $(".myCol").removeClass("collapse");  });
+   $(".btn-BEAT"               ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("BEAT"               ); $(".myCol").removeClass("collapse"); $(".myCol:not(.BEAT                )").addClass("collapse");    }); 
+   $(".btn-MUST"               ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("MUST"               ); $(".myCol").removeClass("collapse"); $(".myCol:not(.MUST                )").addClass("collapse");    }); 
+   $(".btn-Daily"              ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Daily"              ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Daily               )").addClass("collapse");    }); 
+   $(".btn-Kayla"              ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Kayla"              ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Kayla               )").addClass("collapse");    }); 
+
+   $(".btn-FINGERS"            ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("FINGERS"            ); $(".myCol").removeClass("collapse"); $(".myCol:not(.FINGERS             )").addClass("collapse");    }); 
+   $(".btn-BLUES"              ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("BLUES"              ); $(".myCol").removeClass("collapse"); $(".myCol:not(.BLUES               )").addClass("collapse");    }); 
+   $(".btn-DRUM"               ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("DRUM"               ); $(".myCol").removeClass("collapse"); $(".myCol:not(.DRUM                )").addClass("collapse");    }); 
+   $(".btn-GUTAR"              ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("GUTAR"              ); $(".myCol").removeClass("collapse"); $(".myCol:not(.GUTAR               )").addClass("collapse");    }); 
+   $(".btn-PIANO"              ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("PIANO"              ); $(".myCol").removeClass("collapse"); $(".myCol:not(.PIANO               )").addClass("collapse");    }); 
+   $(".btn-LYRICS"             ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("LYRICS"             ); $(".myCol").removeClass("collapse"); $(".myCol:not(.LYRICS              )").addClass("collapse");    }); 
+   $(".btn-CIRCLE"             ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("CIRCLE"             ); $(".myCol").removeClass("collapse"); $(".myCol:not(.CIRCLE              )").addClass("collapse");    }); 
+   $(".btn-NAMES"              ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("NAMES"              ); $(".myCol").removeClass("collapse"); $(".myCol:not(.NAMES               )").addClass("collapse");    }); 
+   $(".btn-GOOD"               ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("GOOD"               ); $(".myCol").removeClass("collapse"); $(".myCol:not(.GOOD                )").addClass("collapse");    }); 
+   $(".btn-LOTS"               ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("LOTS"               ); $(".myCol").removeClass("collapse"); $(".myCol:not(.LOTS                )").addClass("collapse");    }); 
+   $(".btn-SCALE"              ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("SCALE"              ); $(".myCol").removeClass("collapse"); $(".myCol:not(.SCALE               )").addClass("collapse");    }); 
+   $(".btn-SURF"               ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Surf"               ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Surf                )").addClass("collapse");    }); 
+   $(".btn-RIFFS"              ).click(function(){  $(".collapse").removeClass("show"); $('#curTag').text("RIFFS"              ); $(".myCol").removeClass("collapse"); $(".myCol:not(.RIFFS               )").addClass("collapse");    });
+   $(".btn-bGrass"             ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("bGrass"             ); $(".myCol").removeClass("collapse"); $(".myCol:not(.bGrass              )").addClass("collapse");    }); 
+   $(".btn-BGRASS"             ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("BGRASS"             ); $(".myCol").removeClass("collapse"); $(".myCol:not(.BGRASS              )").addClass("collapse");    }); 
+
+   $(".btn-Energy"             ).click(function(){  $(".collapse").removeClass("show"); $('#curTag').text("Energy"             ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Energy              )").addClass("collapse");    });
+   $(".btn-Sprit"              ).click(function(){  $(".collapse").removeClass("show"); $('#curTag').text("Sprit"              ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Sprit               )").addClass("collapse");    });
+   $(".btn-Top10"              ).click(function(){  $(".collapse").removeClass("show"); $('#curTag').text("Top10"              ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Top10               )").addClass("collapse");    });
+   $(".btn-Love"               ).click(function(){  $(".collapse").removeClass("show"); $('#curTag').text("Love"               ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Love                )").addClass("collapse");    });
+
+   $(".btn-NEW"                ).click(function(){  $(".collapse").removeClass("show"); $('#curTag').text("NEW"                ); $(".myCol").removeClass("collapse"); $(".myCol:not(.NEW                 )").addClass("collapse");    });
+
+   $(".btn-Stock"              ).click(function(){  $(".collapse").removeClass("show"); $('#curTag').text("Stock"              ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Stock               )").addClass("collapse");    });
+
+
+
+   $(".btn-Mon"                ).click(function(){  $(".collapse").removeClass("show"); $('#curTag').text("Mon"                ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Mon                 )").addClass("collapse");    });
+   $(".btn-Tue"                ).click(function(){  $(".collapse").removeClass("show"); $('#curTag').text("Tue"                ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Tue                 )").addClass("collapse");    });
+   $(".btn-Wed"                ).click(function(){  $(".collapse").removeClass("show"); $('#curTag').text("Wed"                ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Wed                 )").addClass("collapse");    });
+   $(".btn-Thr"                ).click(function(){  $(".collapse").removeClass("show"); $('#curTag').text("Thr"                ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Thr                 )").addClass("collapse");    });
+   $(".btn-Fri"                ).click(function(){  $(".collapse").removeClass("show"); $('#curTag').text("Fri"                ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Fri                 )").addClass("collapse");    });
+   $(".btn-Sat"                ).click(function(){  $(".collapse").removeClass("show"); $('#curTag').text("Sat"                ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Sat                 )").addClass("collapse");    });
+   $(".btn-Sun"                ).click(function(){  $(".collapse").removeClass("show"); $('#curTag').text("Sun"                ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Sun                 )").addClass("collapse");    });
+
+
+   $(".btn-AshleeYoung"        ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Ashleeyoung"        ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Ashleeyoung         )").addClass("collapse");    }); 
+   $(".btn-FromScratch"        ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Fromscratch"        ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Fromscratch         )").addClass("collapse");    }); 
+   $(".btn-KeysCoach"          ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Keyscoach"          ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Keyscoach           )").addClass("collapse");    }); 
+   $(".btn-Mangold"            ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Mangold"            ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Mangold             )").addClass("collapse");    }); 
+   $(".btn-Musicians"          ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Musicians"          ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Musicians           )").addClass("collapse");    }); 
+   $(".btn-Pianoly"            ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Pianoly"            ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Pianoly             )").addClass("collapse");    }); 
+   $(".btn-Al_Stewart"         ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Al_Stewart"         ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Al_Stewart          )").addClass("collapse");    }); 
+   $(".btn-Association"        ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Association"        ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Association         )").addClass("collapse");    }); 
+   $(".btn-Atlantic"           ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Atlantic"           ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Atlantic            )").addClass("collapse");    }); 
+   $(".btn-Bachman"            ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Bachman"            ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Bachman             )").addClass("collapse");    }); 
+   $(".btn-Beatles"            ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Beatles"            ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Beatles             )").addClass("collapse");    }); 
+   $(".btn-Boston"             ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Boston"             ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Boston              )").addClass("collapse");    }); 
+   $(".btn-Brewer"             ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Brewer"             ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Brewer              )").addClass("collapse");    }); 
+   $(".btn-Creedence"          ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Creedence"          ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Creedence           )").addClass("collapse");    }); 
+   $(".btn-Doobie"             ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Doobie"             ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Doobie              )").addClass("collapse");    }); 
+   $(".btn-Foghat"             ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Foghat"             ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Foghat              )").addClass("collapse");    }); 
+   $(".btn-Four_Seasons"       ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Four_Seasons"       ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Four_Seasons        )").addClass("collapse");    }); 
+   $(".btn-Georgia_Satellites" ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Georgia_Satellites" ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Georgia_Satellites  )").addClass("collapse");    }); 
+   $(".btn-Grand_Funk"         ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Grand_Funk"         ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Grand_Funk          )").addClass("collapse");    }); 
+   $(".btn-Grass_Roots"        ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Grass_Roots"        ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Grass_Roots         )").addClass("collapse");    }); 
+   $(".btn-Hollies"            ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Hollies"            ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Hollies             )").addClass("collapse");    }); 
+   $(".btn-Jerry_Lee_Lewis"    ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Jerry_Lee_Lewis"    ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Jerry_Lee_Lewis     )").addClass("collapse");    }); 
+   $(".btn-Joe_Walsh"          ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Joe_Walsh"          ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Joe_Walsh           )").addClass("collapse");    }); 
+   $(".btn-KC_Sunshine"        ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Kc_Sunshine"        ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Kc_Sunshine         )").addClass("collapse");    }); 
+   $(".btn-Miller"             ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Miller"             ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Miller              )").addClass("collapse");    }); 
+   $(".btn-Mungo_Jerry"        ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Mungo_Jerry"        ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Mungo_Jerry         )").addClass("collapse");    }); 
+   $(".btn-Nick_Lowe"          ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Nick_Lowe"          ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Nick_Lowe           )").addClass("collapse");    }); 
+   $(".btn-Orleans"            ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Orleans"            ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Orleans             )").addClass("collapse");    }); 
+   $(".btn-Peaches_Herb"       ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Peaches_Herb"       ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Peaches_Herb        )").addClass("collapse");    }); 
+   $(".btn-Peggy_Lee"          ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Peggy_Lee"          ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Peggy_lee           )").addClass("collapse");    }); 
+   $(".btn-Redbone"            ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Redbone"            ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Redbone             )").addClass("collapse");    }); 
+   $(".btn-Rock_n_Roll_50s_60s").click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Rock_n_Roll_50s_60s"); $(".myCol").removeClass("collapse"); $(".myCol:not(.Rock_n_Roll_50s_60s )").addClass("collapse");    }); 
+   $(".btn-Sinatra"            ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Sinatra"            ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Sinatra             )").addClass("collapse");    }); 
+   $(".btn-Skifs"              ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Skifs"              ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Skifs               )").addClass("collapse");    }); 
+   $(".btn-Steely_Dan"         ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Steely_Dan"         ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Steely_Dan          )").addClass("collapse");    }); 
+   $(".btn-Steppenwolf"        ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Steppenwolf"        ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Steppenwolf         )").addClass("collapse");    }); 
+   $(".btn-Stones"             ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Stones"             ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Stones              )").addClass("collapse");    }); 
+   $(".btn-Sugarloaf"          ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Sugarloaf"          ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Sugarloaf           )").addClass("collapse");    }); 
+   $(".btn-Surfaris"           ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Surfaris"           ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Surfaris            )").addClass("collapse");    }); 
+   $(".btn-Thorogood"          ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Thorogood"          ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Thorogood           )").addClass("collapse");    }); 
+   $(".btn-Tommy_James"        ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Tommy_James"        ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Tommy_James         )").addClass("collapse");    }); 
+   $(".btn-Toto"               ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Toto"               ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Toto                )").addClass("collapse");    }); 
+   $(".btn-Van_Morrison"       ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Van_Morrison"       ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Van_Morrison        )").addClass("collapse");    }); 
+   $(".btn-Wilburys"           ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Wilburys"           ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Wilburys            )").addClass("collapse");    }); 
+   $(".btn-Wild_Cherry"        ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Wild_Cherry"        ); $(".myCol").removeClass("collapse"); $(".myCol:not(.Wild_Cherry         )").addClass("collapse");    }); 
+
+  $(".btn-Dreher_Demo"         ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Dreher_Promo"         ); $(".myCol").removeClass("collapse");  });
+  $(".btn-Dreher_Family"       ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Dreher_Family"        ); $(".myCol").removeClass("collapse");  });
+  $(".btn-Dreher_Cover"        ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Dreher_Cover"         ); $(".myCol").removeClass("collapse");  });
+  $(".btn-Dreher_Instrumentals").click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Dreher_Instrumentals" ); $(".myCol").removeClass("collapse");  });
+  $(".btn-Dreher_Spiritual"    ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Dreher_Spiritual"     ); $(".myCol").removeClass("collapse");  });
+  $(".btn-Dreher_Must_See"     ).click(function(){  $(".collapse").removeClass("show"); $("#curTag").text("Dreher_Must_See"      ); $(".myCol").removeClass("collapse");  });
+
+
+
+});
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
